@@ -1,0 +1,120 @@
+.photo {
+	background-size: cover;
+	background-position: top;
+	background-color: #ffffff33;
+	width: 16vw;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.about_detail>div {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.about_detail>div:nth-child(2) {
+	width: 60%
+}
+
+.about_detail>div>div {
+	margin-bottom: 1.5vw;
+	color: #fff;
+}
+
+.about_detail>div:nth-child(1) {
+	margin: auto 1%;
+}
+
+.about_detail>div:nth-child(1)>div ul li {
+	text-align: right;
+}
+
+.about_detail>div:nth-child(2)>div ul li {
+	display: flex;
+}
+
+.about_detail>div:nth-child(2)>div ul li p:nth-child(1) {
+	margin-right: 30px;
+}
+
+.about_detail>div:nth-child(2) {
+	margin-left: 3%;
+}
+.about_detail>div:nth-child(2)>div:first-child>p {
+	margin-right: 7%;
+}
+
+.about_detail {
+	margin: 30px 5% 0 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.fp-tableCell h1 {
+	line-height: 90px;
+	font-size: 50px;
+}
+
+.fp-tableCell h2 {
+	font-size: 22px;
+}
+
+.fp-tableCell p {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 4px;
+	margin-left: 12px;
+}
+.my_info > ul > li > p {
+	margin-left: 0;
+}
+
+@media (max-width : 1600px){
+	.fp-tableCell h1 {
+		line-height: 8.4vw !important;
+		font-size: 3.2vw !important;
+	}
+	.fp-tableCell h2 {
+		font-size: 1.2vw !important;
+	}
+	.fp-tableCell p {
+		font-size: 1.0vw !important;
+		line-height: 1.5vw !important;
+	}
+}
+
+@media ( max-width : 1024px) {
+	.photo {
+		width: 18vw;
+	}
+	.fp-tableCell h1 {
+		padding: 0 10px !important;
+		text-align: center !important;
+		white-space: normal !important;
+		line-height: 8.4vw !important;
+		font-size: 3.8vw !important;
+	}
+	.fp-tableCell h2 {
+		font-size: 2.4vw !important;
+	}
+	.fp-tableCell p {
+		font-size: 2.1vw !important;
+		line-height: 2.5vw !important;
+	}
+	.about_detail > div:nth-child(1) {
+		width: 80%;
+		display: flex;
+	}
+	.about_detail > div:nth-child(1) > div {
+		padding-top: 10px;
+		padding-left: 3%;
+		width: 70%;
+	}
+	.about_detail > div:nth-child(1) > div li {
+		padding-bottom: 12px;
+	}
+	.about_detail > div:nth-child(2) {
+		width: 80%;
+	}
+}
