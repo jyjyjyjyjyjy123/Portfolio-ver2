@@ -4,7 +4,7 @@
 	background-color: #ffffff33;
 	width: 16vw;
 	height: auto;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 
 .about_detail>div {
@@ -17,7 +17,7 @@
 }
 
 .about_detail>div>div {
-	margin-bottom: 1.5vw;
+	margin-bottom: 1.2vw;
 	color: #fff;
 }
 
@@ -35,21 +35,25 @@
 
 .about_detail>div:nth-child(2)>div ul li p:nth-child(1) {
 	margin-right: 30px;
+	min-width: 10%;
 }
 
 .about_detail>div:nth-child(2) {
 	margin-left: 3%;
 }
 .about_detail>div:nth-child(2)>div:first-child>p {
-	margin-right: 7%;
+	margin-right: 5%;
 }
 
 .about_detail {
-	margin: 30px 5% 0 10%;
+	margin: 30px 10% 0 10%;
+	padding-top: 1vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	background: #fbeccb;
+  	border-radius: 50% 20% / 10% 40%;
 }
 .fp-tableCell h1 {
 	line-height: 90px;
@@ -76,7 +80,7 @@
 		font-size: 3.2vw !important;
 	}
 	.fp-tableCell h2 {
-		font-size: 1.2vw !important;
+		font-size: 1.4vw !important;
 	}
 	.fp-tableCell p {
 		font-size: 1.0vw !important;
@@ -99,7 +103,7 @@
 		font-size: 2.4vw !important;
 	}
 	.fp-tableCell p {
-		font-size: 2.1vw !important;
+		font-size: 1.8vw !important;
 		line-height: 2.5vw !important;
 	}
 	.about_detail > div:nth-child(1) {
@@ -107,7 +111,7 @@
 		display: flex;
 	}
 	.about_detail > div:nth-child(1) > div {
-		padding-top: 10px;
+		padding-top: 10%;
 		padding-left: 3%;
 		width: 70%;
 	}
@@ -116,5 +120,8 @@
 	}
 	.about_detail > div:nth-child(2) {
 		width: 80%;
+	}
+	.my_info>ul>li {
+		max-width: 90%;
 	}
 }

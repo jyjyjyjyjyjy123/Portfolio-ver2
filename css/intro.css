@@ -1,54 +1,64 @@
 #intro {
-  height: 100vh;
-  animation: gradient 14s ease-in-out infinite;
+	height: 100vh;
+	animation: gradient 14s ease-in-out infinite;
 }
+
 #intro #typo_1 {
-  position: absolute;
-  width: 100%;
-  top: 37vh;
-  z-index: 1000;
-  opacity: 0;
-  animation: typo_1 1000ms ease;
-  animation-fill-mode: forwards;
-  pointer-events: none;
-  box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	top: 20vh;
+	z-index: 1000;
+	opacity: 0;
+	animation: typo_1 1000ms ease;
+	animation-fill-mode: forwards;
+	pointer-events: none;
+	box-sizing: border-box;
 }
+
 #intro #typo_1 h1 {
-  line-height: 9rem;
-  color: white;
-  font-size: 9.1rem;
-  font-weight: 900;
-  text-align: center;
-  white-space: nowrap;
-  transition: 300ms ease;
-  font-family: Noto Sans KR;
+	font-family: Noto Sans KR;
+	color: #ecbd47;
+	line-height: 7rem;
+	font-size: 9.1rem;
+	font-weight: 900;
+	text-align: center;
+	white-space: nowrap;
+	transition: 300ms ease;
+	/* -webkit-text-stroke: 5px #005ad5; */
 }
 #intro #typo_1 h2 {
-  color: rgb(55, 255, 180);
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 1.2vw;
-  animation: typo_1_1 900ms 800ms;
-  animation-fill-mode: backwards;
-  mix-blend-mode: difference;
-  transition: 300ms ease;
-  margin-top: 20px;
+	font-family: Noto Sans KR;
+	color: #bf82af;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 1.2vw;
+	animation: typo_1_1 900ms 800ms;
+	animation-fill-mode: backwards;
+	transition: 300ms ease;
+	margin-top: 20px;
+}
+
+#intro #typo_1 div {
+	background-color: #fbeccb;
+  	border-radius: 50% 20% / 10% 40%;
+  	padding: 10% 0;
 }
 @keyframes typo_1 {
-  0% {
-    top: 50vh;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		top: 50vh;
+		opacity: 0;
+	}
+
+	100% {
+		opacity:1;
+	}
 }
 @keyframes typo_1_1 {
-  0% {
-    letter-spacing: 1vw;
-    opacity: 0;
-  }
+   0% {
+	letter-spacing: 1vw;
+	opacity: 0;
+	}
 }
 @media all{
   #typo_1 h1 {

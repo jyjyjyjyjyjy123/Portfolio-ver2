@@ -22,6 +22,11 @@
 * {
 	box-sizing: border-box;
 }
+hr{
+	background:#ecbd47;
+	height:1px;
+	border:0;
+}
 
 html, body, h1, h2, h3, h4, h5, h6, p, div, a, header, main, nav, footer,
 	aside, section, article, figure, table, thead, tbody, tfoot, tr, th, td,
@@ -170,11 +175,11 @@ body {
 	height: 16px;
 	width: 16px;
 	margin: -8px 0 0 -8px;
-	background: 0;
 	background-image: url(../images/icon_side_nav.svg);
 	background-size: cover;
-	filter: grayscale(1) brightness(2);
+	filter: blur(1px);
 	animation: rotate 3s linear infinite;
+    color: #fbeccb;
 }
 /* 
 section
@@ -185,7 +190,7 @@ section
 	scroll-behavior: unset;
 	padding-top: 5vw !important;
 	padding-bottom: 5vw !important;
-	background-image: linear-gradient(to right, #37ffb4 4.5%, #003b5f 4.5% 95.5%, #37ffb4  95.5%) !important;
+	background-image: linear-gradient(to right, #fbeccb 4.5%, #ecbd47 4.5% 95.5%, #fbeccb  95.5%) !important;
 }
 
 .section .layer {
@@ -204,10 +209,6 @@ body {
 	-ms-use-select: none;
 }
 
-.sub li a {
-	color: black;
-}
-
 .section {
 	width: 100%;
 	height: 100%;
@@ -215,11 +216,14 @@ body {
 }
 p {
 	font-size: 18px;
-	color: #ffffff;
+	color: #ecbd47;
+	text-wrap-style: balance;
+	-webkit-text-stroke-width: medium;
 }
 
 h2 {
 	font-size: 26px;
+	-webkit-text-stroke-width: medium;
 }
 .my_info>ul>li {
 	display: flex;
@@ -227,11 +231,12 @@ h2 {
 }
 
 .git_hub p {
-	color: rgb(55, 255, 180);
+	color: #ecbd47;
+    text-decoration-line: underline;
 }
 
 .git_hub p:hover {
-	color: rgb(160, 160, 255);
+	color: #bf82af;
 }
 
 #myMenu li:nth-child(4) ul li a {
@@ -246,8 +251,9 @@ h2 {
 	text-align: center;
 	white-space: nowrap;
 	transition: 300ms ease;
-	color: #fff;
+	color: #fbeccb;
 	font-family: 'KNUTRUTHTTF';
+	text-shadow: 2px 2px #bf82af;
 }
 
 .section h2 {
@@ -263,10 +269,11 @@ h2 {
 }
 
 .subheading {
-	color: #fff;
-	font-family: 'KNUTRUTHTTF';
+	color: #ecbd47;
+	/* font-family: 'KNUTRUTHTTF'; */
 	font-weight: 700 !important;
 	margin-bottom: 10px;
+	text-shadow: 1px 1px #bf82af;
 }
 
 /* desktop & tablet large */
